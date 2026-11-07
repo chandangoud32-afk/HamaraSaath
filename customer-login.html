@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Login | HamaraSaath</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f2f5fa;min-height:100vh;display:grid;place-items:center;padding:20px}
+.login{background:white;width:100%;max-width:420px;padding:35px 28px;border-radius:16px;box-shadow:0 10px 35px #102e5015}
+.logo{text-align:center;font-size:27px;font-weight:bold;color:#173d69}
+.logo span{color:#d49b43}
+.tag{text-align:center;color:#8290a2;font-size:12px;letter-spacing:2px;margin:9px 0 30px}
+h2{text-align:center;color:#173d69;margin-bottom:10px}
+.desc{text-align:center;color:#78869a;font-size:14px;margin-bottom:28px}
+label{display:block;font-size:14px;font-weight:bold;margin:16px 0 8px;color:#34445b}
+input{width:100%;padding:14px;border:1px solid #dce3ed;border-radius:7px;font-size:15px;outline:none}
+button{width:100%;padding:15px;background:#173d69;color:white;border:0;border-radius:7px;font-size:15px;font-weight:bold;margin-top:22px}
+.back{display:block;text-align:center;margin-top:22px;color:#173d69;text-decoration:none;font-size:14px}
+.notice{font-size:12px;color:#8793a3;text-align:center;margin-top:20px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="login">
+  <div class="logo">Hamara<span>Saath</span></div>
+  <div class="tag">RISHTON KI BUNIYAAD</div>
+  <h2>Customer Login</h2>
+  <p class="desc">Welcome back! Access your property details.</p>
+
+  <form onsubmit="event.preventDefault();alert('Real OTP login will be connected in the next development step.');">
+    <label>Registered Mobile Number</label>
+    <input type="tel" placeholder="Enter 10-digit mobile number" maxlength="10" pattern="[0-9]{10}" required>
+    <button type="submit">Continue</button>
+  </form>
+
+  <a class="back" href="index.html">← Back to Home</a>
+  <p class="notice">Your property journey, all in one place.<br>Secure login system coming soon.</p>
+</div>
+</body>
+</html>
